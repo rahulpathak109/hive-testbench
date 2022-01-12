@@ -24,7 +24,8 @@ All of these steps should be carried out on your Hadoop cluster.
 
 - Step 1: Prepare your environment.
 
-  In addition to Hadoop and Hive, before you begin ensure ```gcc``` is installed and available on your system path. If you system does not have it, install it using yum or apt-get.
+  In addition to Hadoop and Hive, before you begin ensure ```gcc``` is installed and available on your system path. If you system does not have it, install it using yum or apt-get. 
+  Set javac in your path. Example `export PATH=$PATH:/usr/java/jdk1.8.0_232-cloudera/bin`
 
 - Step 2: Decide which test suite(s) you want to use.
 
