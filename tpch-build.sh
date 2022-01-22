@@ -29,13 +29,11 @@ if [ $? -ne 0 ]; then
 	fi
 	tar -zxf apache-maven-3.8.4-bin.tar.gz > /dev/null
 	CWD=$(pwd)
-	export MAVEN_HOME="$CWD/apache-maven-3.0.5"
-	export PATH=$PATH:$MAVEN_HOME/bin
+	export PATH="$PATH:$CWD/apache-maven-3.8.4/bin"
 	if [ x$HADOOP_VERSION == x ]; then
 		echo "Please set your hadoop version"
 		echo "example: run 'hadoop version' and use first 3 number from the output"
                 echo "hadoop version\nHadoop 3.1.1.3.1.0.0-78\nexport HADOOP_VERSION=3.1.1"
-
 		exit 1
 	fi
 fi
